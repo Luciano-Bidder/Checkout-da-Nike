@@ -1,1 +1,51 @@
-html do meu site
+<!DOCTYPE html>
+<html lang="pt-Pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <div class=" mainscreen">
+        <link rel="stylesheet" href="exemplo_2.css">
+
+        <title>Exemplo 2 - Elias Luciano  Ambrósio</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="leftside">
+            <img src="exemplo_2.png" class="produto" alt="Shoes" />
+        </div>
+        <div class="rightside">
+            <form action="">
+                <h1>Tela de CheckOut</h1>
+                <h2>Informações de Pagamentos</h2>
+                <p>Nome do propietario da conta</p>
+                <input type="text" class="inputbox" name="name" required />
+                <p>Número de Cartão</p>
+                <input type="number" class="inputbox" name="numero_de_cartao" id="numero_de_cartao" required />
+
+                <p>Tipo de Cartão</p>
+                <select class="inputbox" name="card_type" id="card_type" required>
+                    <option value="">--Selecione o tipo de cartão--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="RuPay">PayPal</option>
+                    <option value="RuPay">RuPay</option>
+                    <option value="MasterCard">MasterCard</option>
+                </select>
+                <div class="expcvv">
+
+                    <p class="expcvv_text">Validade</p>
+                    <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+
+                    <p class="expcvv_text2">Password</p>
+                    <input type="password" class="inputbox" name="cvv" id="cvv" required />
+                </div>
+                <p></p>
+                <button type="submit" class="button">CheckOut</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
